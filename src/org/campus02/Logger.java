@@ -13,8 +13,7 @@ public class Logger {
     }
 
     public void writeLogEntry(String entry) throws IOException {
-        // erstellt einen PrintWriter
-        // Mit dem Wert true werden alle neuen Daten angefügt und die Datei nicht überschrieben
+        // Mit dem Wert true in Filewriter werden alle neuen Zeilen an das Ende des Files geschrieben
         try (PrintWriter pw = new PrintWriter(new FileWriter(pathToFile, true))) {
             pw.println(entry);
             pw.flush();

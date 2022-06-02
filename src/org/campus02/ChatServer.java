@@ -12,7 +12,7 @@ public class ChatServer {
         ArrayList<ChatClient> chatClients = new ArrayList<>();
         HashMap<String, ChatClient> chatClientsMap = new HashMap<>();
 
-        System.out.println("start serer on port 1111");
+        System.out.println("start server on port 1111");
         final Logger logger = new Logger("log/logfile.log");
         try (ServerSocket server = new ServerSocket(1111)) {
             while (true) {
